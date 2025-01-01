@@ -2,8 +2,6 @@ import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Float32
 import psutil
-#import re
-#import subprocess
 
 class Cpu_utilization(Node):
     def __init__(self):
