@@ -31,6 +31,10 @@ cpu_usage
 - `/cpu`
 
 ## 使用方法
+- psutilをインストールする
+`sudo apt install python3-pip`
+`pip install psutil`
+
 - リポジトリをクローン  
 `git clone https://github.com/yukimi749/robosys2024.git`
 
