@@ -17,7 +17,7 @@ cpu_usage
 ├── resource
 │   └── cpu_usage
 ├── setup.cfg
-$ cd├── setup.py
+├── setup.py
 └── test
     ├── test.bash
     ├── test_copyright.py
@@ -25,10 +25,14 @@ $ cd├── setup.py
     └── test_pep257.py
 ```
 ### ノード
-- `cpu_utilization.py`
+`cpu_utilization.py`
 
 ### トピック
-- `/cpu`
+`/cpu`
+
+### テスト用ディレクトリ
+`launch`
+`test`
 
 ## 使用方法
 - psutilをインストールする  
@@ -39,7 +43,7 @@ $ cd├── setup.py
 `git clone https://github.com/yukimi749/robosys2024.git`
 
 - ディレクトリに移動  
-`cd cpu_usage/cpu_usage
+`cd cpu_usage/cpu_usage`
 
 - 実行権限を追加  
 `chmod +x cpu_utilization.py`
