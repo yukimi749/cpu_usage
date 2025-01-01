@@ -31,7 +31,7 @@ cpu_usage
 `/cpu`
 
 ### テスト用ディレクトリ
-`launch`
+`launch`  
 `test`
 
 ## 使用方法
