@@ -25,7 +25,7 @@ cpu_usage
     └── test_pep257.py
 ```
 ### ノード
-`cpu_utilization.py`
+`/cpu_utilization`
 
 ### トピック
 `/cpu`
@@ -39,7 +39,8 @@ cpu_usage
 `sudo apt install python3-pip`
 `pip install psutil`
 
-- リポジトリをクローン  
+- リポジトリをクローン
+`cd ~/ros2_ws/src`  
 `git clone https://github.com/yukimi749/robosys2024.git`
 
 - ディレクトリに移動  
@@ -69,6 +70,7 @@ cpu_usage
 
 ## テスト環境
 - Ubuntu 22.04.5 LTS
+- ROS2 Humble
 
 ## ライセンス
 - このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．
