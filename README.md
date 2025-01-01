@@ -39,7 +39,7 @@ cpu_usage
 `sudo apt install python3-pip`
 `pip install psutil`
 
-- リポジトリをクローン
+- リポジトリをクローン  
 `cd ~/ros2_ws/src`  
 `git clone https://github.com/yukimi749/robosys2024.git`
 
