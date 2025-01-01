@@ -17,7 +17,7 @@ cpu_usage
 ├── resource
 │   └── cpu_usage
 ├── setup.cfg
-├── setup.py
+$ cd├── setup.py
 └── test
     ├── test.bash
     ├── test_copyright.py
@@ -31,7 +31,7 @@ cpu_usage
 - `/cpu`
 
 ## 使用方法
-- psutilをインストールする
+- psutilをインストールする  
 `sudo apt install python3-pip`
 `pip install psutil`
 
@@ -39,12 +39,12 @@ cpu_usage
 `git clone https://github.com/yukimi749/robosys2024.git`
 
 - ディレクトリに移動  
-`cd cpu_usage/cpu_usage`
+`cd cpu_usage/cpu_usage
 
-- 実行権限を追加
+- 実行権限を追加  
 `chmod +x cpu_utilization.py`
 
-- 以下のコマンドで実行する
+- 以下のコマンドで実行する  
 `ros2 run cpu_usage cpu_utilization`
 
 ## 実行例
