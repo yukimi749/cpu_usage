@@ -9,11 +9,7 @@ def generate_launch_description():
     cpu_utilization = launch_ros.actions.Node(
         package='cpu_usage',
         executable='cpu_utilization',
-        )
-    subscriber = launch_ros.actions.Node(
-        package='cpu_usage',
-        executable='subscriber',
-        output='screen'
+        output='screen',
         )
 
-    return launch.LaunchDescription([cpu_utilization, subscriber])
+    return launch.LaunchDescription([cpu_utilization])
