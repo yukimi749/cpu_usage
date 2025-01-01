@@ -1,7 +1,7 @@
 # cpu_usage
 ![test](https://github.com/yukimi749/cpu_usage/actions/workflows/test.yml/badge.svg)
 
-CPUの使用率を出力する
+CPUの使用率をトピックから出力する
 
 ## ディレクトリ構成
 ```
@@ -24,6 +24,12 @@ cpu_usage
     ├── test_flake8.py
     └── test_pep257.py
 ```
+### ノード
+- `cpu_utilization.py`
+
+### トピック
+- `/cpu`
+
 ## 使用方法
 - リポジトリをクローン  
 `git clone https://github.com/yukimi749/robosys2024.git`
