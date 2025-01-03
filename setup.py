@@ -24,6 +24,7 @@ setup(
     entry_points={
         'console_scripts': [
             'cpu_utilization = cpu_usage.cpu_utilization:main',
+            'listener = cpu_usage.listener:main',
         ],
     },
 )
