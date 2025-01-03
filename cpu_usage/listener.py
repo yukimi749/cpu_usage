@@ -9,7 +9,7 @@ node = Node("listener")
 
 def cb(msg):
     global node
-    node.get_logger().info("cpu_usage: %f%%" %msg.data)
+    node.get_logger().info("Listen: %f%%" %msg.data)
 
 
 def main():
