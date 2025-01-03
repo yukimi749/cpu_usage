@@ -1,7 +1,8 @@
 # cpu_usage
 ![test](https://github.com/yukimi749/cpu_usage/actions/workflows/test.yml/badge.svg)
 
-CPUの使用率をトピックから出力する
+ROS2のパッケージ
+- CPUの使用率をトピックから出力する
 
 ## ディレクトリ構成
 ```
@@ -25,10 +26,12 @@ cpu_usage
     └── test_pep257.py
 ```
 ### ノード
-`/cpu_utilization`
+`cpu_utilization`
+- 1秒ごとにCPUの使用率をトピックから出力する
+- トピック:`cpu`
 
-### トピック
-`/cpu`
+`listener`
+- テスト用のサブスクライバ
 
 ### テスト用ディレクトリ
 `launch`  
@@ -52,17 +55,40 @@ cpu_usage
 - 以下のコマンドで実行する  
 `ros2 run cpu_usage cpu_utilization`
 
-## 実行例
+### 実行方法
+- 実行方法1
+２つの端末で実行
+端末1
+`ros2 run cpu_usage cpu_utilization`
+
+端末2
+`ros2 run cpu_usage listener`
+
+- 実行方法2
+１つの端末で実行
+`ros2 launch cpu_usage utilization.launch.py`
+
+### 実行例
+- 実行結果1
 ```
-[INFO] [1735732643.020914561] [cpu_utilization]: cpu_usage: "0.0"
-[INFO] [1735732644.023848833] [cpu_utilization]: cpu_usage: "0.10000000149011612"
-[INFO] [1735732645.027048696] [cpu_utilization]: cpu_usage: "3.5999999046325684"
-[INFO] [1735732646.030160955] [cpu_utilization]: cpu_usage: "0.0"
-[INFO] [1735732647.034149017] [cpu_utilization]: cpu_usage: "0.0"
-[INFO] [1735732648.038025267] [cpu_utilization]: cpu_usage: "0.0"
-[INFO] [1735732649.041805381] [cpu_utilization]: cpu_usage: "0.0"
-[INFO] [1735732650.045667432] [cpu_utilization]: cpu_usage: "0.20000000298023224"
-[INFO] [1735732651.049538563] [cpu_utilization]: cpu_usage: "0.0"
+[INFO] [1735894197.609492395] [listener]: Listen: cpu_usage: 0.0%
+[INFO] [1735894198.612823728] [listener]: Listen: cpu_usage: 0.1%
+[INFO] [1735894199.614363340] [listener]: Listen: cpu_usage: 0.2%
+[INFO] [1735894200.616717244] [listener]: Listen: cpu_usage: 0.1%
+[INFO] [1735894201.619407268] [listener]: Listen: cpu_usage: 0.1%
+[INFO] [1735894202.621758034] [listener]: Listen: cpu_usage: 0.0%
+[INFO] [1735894203.624013686] [listener]: Listen: cpu_usage: 0.1%
+```
+
+- 実行結果2
+```
+[listener-2] [INFO] [1735894979.473645049] [listener]: Listen: cpu_usage: 0.0%
+[listener-2] [INFO] [1735894980.475382266] [listener]: Listen: cpu_usage: 0.2%
+[listener-2] [INFO] [1735894981.477145923] [listener]: Listen: cpu_usage: 0.0%
+[listener-2] [INFO] [1735894982.478906305] [listener]: Listen: cpu_usage: 0.1%
+[listener-2] [INFO] [1735894983.481181751] [listener]: Listen: cpu_usage: 0.3%
+[listener-2] [INFO] [1735894984.484011404] [listener]: Listen: cpu_usage: 0.2%
+[listener-2] [INFO] [1735894985.486258713] [listener]: Listen: cpu_usage: 0.1%
 ```
 ## 必要なソフトウェア
 - Python
@@ -70,7 +96,7 @@ cpu_usage
 
 ## テスト環境
 - Ubuntu 22.04.5 LTS
-- ROS2 Humble
+- ROS2 Foxy
 
 ## ライセンス
 - このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．
