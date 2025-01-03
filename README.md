@@ -27,12 +27,14 @@ cpu_usage
 ```
 ## ノード
 ### cpu_utilization
-- psutilライブラリを使用して1秒ごとにCPUの使用率をトピックから出力する
-- トピック:`cpu`
-- 送信するデータの型：String
+- psutilライブラリを使用してCPUの使用率を取得し1秒ごとにトピックにパブリッシュする
 
 ### listener
 - テスト用
+
+## トピック
+### cpu
+- メッセージの型：String
 
 ## 使用方法
 - psutilをインストールする  
@@ -45,7 +47,7 @@ cpu_usage
 
 ### 実行方法
 - 実行方法1  
-２つの端末で実行  
+２つの端末で実行
   - 端末1  
 `ros2 run cpu_usage cpu_utilization`  
   - 端末2  
