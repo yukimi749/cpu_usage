@@ -1,7 +1,7 @@
 # cpu_usage
 ![test](https://github.com/yukimi749/cpu_usage/actions/workflows/test.yml/badge.svg)
 
-ROS2のパッケージ
+- ROS2のパッケージ
 - CPUの使用率をトピックから出力する
 
 ## ディレクトリ構成
@@ -44,6 +44,13 @@ cpu_usage
 - リポジトリをクローン  
 `cd ~/ros2_ws/src`  
 `git clone https://github.com/yukimi749/robosys2024.git`
+
+- パッケージをビルド
+`cd ~/ros2_ws`  
+`colcon build`  
+
+- ビルド後の環境を適用
+`source ~/.bashrc  
 
 ### 実行方法
 - 実行方法1  
