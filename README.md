@@ -46,14 +46,13 @@ cpu_usage
 ### 実行方法
 - 実行方法1  
 ２つの端末で実行  
-
-端末1  
+  - 端末1  
 `ros2 run cpu_usage cpu_utilization`  
-端末2  
+  - 端末2  
 `ros2 run cpu_usage listener`  
 
 - 実行方法2  
-１つの端末で実行  
+launchファイルを使用して１つの端末で実行  
 `ros2 launch cpu_usage utilization.launch.py`
 
 ### 実行例
