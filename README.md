@@ -25,35 +25,26 @@ cpu_usage
     ├── test_flake8.py
     └── test_pep257.py
 ```
-### ノード
-`cpu_utilization`
+## ノード
+### cpu_utilization
 - 1秒ごとにCPUの使用率をトピックから出力する
 - トピック:`cpu`
 
-`listener`
+### listener
 - テスト用のサブスクライバ
 
-### テスト用ディレクトリ
+## テスト用ディレクトリ
 `launch`  
 `test`
 
 ## 使用方法
 - psutilをインストールする  
-`sudo apt install python3-pip`
+`sudo apt install python3-pip`  
 `pip install psutil`
 
 - リポジトリをクローン  
 `cd ~/ros2_ws/src`  
 `git clone https://github.com/yukimi749/robosys2024.git`
-
-- ディレクトリに移動  
-`cd cpu_usage/cpu_usage`
-
-- 実行権限を追加  
-`chmod +x cpu_utilization.py`
-
-- 以下のコマンドで実行する  
-`ros2 run cpu_usage cpu_utilization`
 
 ### 実行方法
 - 実行方法1
