@@ -47,13 +47,13 @@ cpu_usage
 `git clone https://github.com/yukimi749/robosys2024.git`
 
 ### 実行方法
-- 実行方法1
-２つの端末で実行
-端末1
-`ros2 run cpu_usage cpu_utilization`
+- 実行方法1  
+２つの端末で実行  
+端末1  
+`ros2 run cpu_usage cpu_utilization`  
 
-端末2
-`ros2 run cpu_usage listener`
+端末2  
+`ros2 run cpu_usage listener`  
 
 - 実行方法2
 １つの端末で実行
