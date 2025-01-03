@@ -27,15 +27,12 @@ cpu_usage
 ```
 ## ノード
 ### cpu_utilization
-- 1秒ごとにCPUの使用率をトピックから出力する
+- psutilライブラリを使用して1秒ごとにCPUの使用率をトピックから出力する
 - トピック:`cpu`
+- 送信するデータの型：String
 
 ### listener
-- テスト用のサブスクライバ
-
-## テスト用ディレクトリ
-`launch`  
-`test`
+- テスト用
 
 ## 使用方法
 - psutilをインストールする  
@@ -48,10 +45,9 @@ cpu_usage
 
 ### 実行方法
 - 実行方法1  
-２つの端末で実行  
+  - ２つの端末で実行  
 端末1  
 `ros2 run cpu_usage cpu_utilization`
-
 端末2  
 `ros2 run cpu_usage listener`  
 
@@ -81,9 +77,6 @@ cpu_usage
 [listener-2] [INFO] [1735894984.484011404] [listener]: Listen: cpu_usage: 0.2%
 [listener-2] [INFO] [1735894985.486258713] [listener]: Listen: cpu_usage: 0.1%
 ```
-## 必要なソフトウェア
-- Python
-  - テスト済みバージョン：3.7~3.10
 
 ## テスト環境
 - Ubuntu 22.04.5 LTS
