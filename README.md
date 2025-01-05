@@ -4,28 +4,6 @@
 - ROS2のパッケージ
 - CPUの使用率をトピックから出力する
 
-## ディレクトリ構成
-```
-cpu_usage
-├── LICENSE
-├── README.md
-├── cpu_usage
-│   ├── __init__.py
-│   ├── cpu_utilization.py
-│   └── listener.py
-├── launch
-│   └── utilization.launch.py
-├── package.xml
-├── resource
-│   └── cpu_usage
-├── setup.cfg
-├── setup.py
-└── test
-    ├── test.bash
-    ├── test_copyright.py
-    ├── test_flake8.py
-    └── test_pep257.py
-```
 ## ノード
 ### cpu_utilization
 - psutilライブラリを使用してCPUの使用率を取得し1秒ごとにトピックにパブリッシュする
@@ -39,6 +17,7 @@ cpu_usage
 - メッセージの型：String
 
 ## 使用方法
+※ここではワーキングディレクトリを`ros2_ws`としています
 - psutilをインストールする  
 `sudo apt install python3-pip`  
 `pip install psutil`
@@ -91,7 +70,7 @@ launchファイルを使用して１つの端末で実行
 
 ## テスト環境
 - Ubuntu 22.04.5 LTS
-- ROS2 Foxy
+  - ROS2 Humble
 
 ## ライセンス
 - このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．
