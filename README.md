@@ -16,7 +16,7 @@
 ### cpu
 - メッセージの型：String
 
-#使用方法
+## 使用方法
 - psutilをインストールする  
 `sudo apt install python3-pip`  
 `pip install psutil`
