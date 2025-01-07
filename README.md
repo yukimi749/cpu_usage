@@ -16,16 +16,15 @@
 ### cpu
 - メッセージの型：String
 
-## 使用方法
-※ここではワーキングディレクトリを`ros2_ws`としています
+#使用方法
 - psutilをインストールする  
 `sudo apt install python3-pip`  
 `pip install psutil`
 
 - リポジトリをクローン  
 `cd ~/ros2_ws/src`  
-`git clone https://github.com/yukimi749/robosys2024.git`
-
+`git clone https://github.com/yukimi749/robosys2024.git`  
+※ここではワーキングディレクトリを`ros2_ws`としています
 - パッケージをビルド  
 `cd ~/ros2_ws`  
 `colcon build`  
@@ -70,7 +69,7 @@ launchファイルを使用して１つの端末で実行
 
 ## テスト環境
 - Ubuntu 22.04.5 LTS
-  - ROS2 Humble
+- ROS2 Humble
 
 ## ライセンス
 - このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．
