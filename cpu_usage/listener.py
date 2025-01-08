@@ -3,7 +3,7 @@
 
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import String
+from std_msgs.msg import Float32
 
 
 rclpy.init()
@@ -12,9 +12,9 @@ node = Node("listener")
 
 def cb(msg):
     global node
-    node.get_logger().info("Listen: %s" %msg.data)
+    node.get_logger().info("Listen: %f%%" %msg.data)
 
 
 def main():
-    sub = node.create_subscription(String, "cpu", cb, 10)
+    sub = node.create_subscription(Float32, "cpu", cb, 10)
     rclpy.spin(node)

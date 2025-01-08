@@ -3,17 +3,17 @@
 
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import String
+from std_msgs.msg import Float32
 import psutil
 
 rclpy.init()
 node = Node("cpu_utilization")
-pub = node.create_publisher(String, "cpu", 10)
+pub = node.create_publisher(Float32, "cpu", 10)
 
 def cb():
-    msg = String()
+    msg = Float32()
     cpu_usage = psutil.cpu_percent(interval=1)
-    msg.data = f"cpu_usage: {cpu_usage}%"
+    msg.data = cpu_usage
     pub.publish(msg)
 
 def main():
