@@ -14,7 +14,7 @@
 
 ## トピック
 ### cpu
-- メッセージの型：String
+- メッセージの型：Float32
 
 ## 使用方法
 ※ここではワーキングディレクトリを`ros2_ws`としています
@@ -31,42 +31,26 @@
 `cd ~/ros2_ws`  
 `colcon build`  
 
-- ビルド後の環境を適用  
-`source ~/.bashrc`  
-
-### 実行方法
-- 実行方法1  
+### 実行方法  
 ２つの端末で実行
   - 端末1  
 `ros2 run cpu_usage cpu_utilization`  
   - 端末2  
 `ros2 run cpu_usage listener`  
 
-- 実行方法2  
-launchファイルを使用して１つの端末で実行  
-`ros2 launch cpu_usage utilization.launch.py`
-
-### 実行例
-- 実行結果1
+### 実行結果
 ```
-[INFO] [1735894197.609492395] [listener]: Listen: cpu_usage: 0.0%
-[INFO] [1735894198.612823728] [listener]: Listen: cpu_usage: 0.1%
-[INFO] [1735894199.614363340] [listener]: Listen: cpu_usage: 0.2%
-[INFO] [1735894200.616717244] [listener]: Listen: cpu_usage: 0.1%
-[INFO] [1735894201.619407268] [listener]: Listen: cpu_usage: 0.1%
-[INFO] [1735894202.621758034] [listener]: Listen: cpu_usage: 0.0%
-[INFO] [1735894203.624013686] [listener]: Listen: cpu_usage: 0.1%
-```
-
-- 実行結果2
-```
-[listener-2] [INFO] [1735894979.473645049] [listener]: Listen: cpu_usage: 0.0%
-[listener-2] [INFO] [1735894980.475382266] [listener]: Listen: cpu_usage: 0.2%
-[listener-2] [INFO] [1735894981.477145923] [listener]: Listen: cpu_usage: 0.0%
-[listener-2] [INFO] [1735894982.478906305] [listener]: Listen: cpu_usage: 0.1%
-[listener-2] [INFO] [1735894983.481181751] [listener]: Listen: cpu_usage: 0.3%
-[listener-2] [INFO] [1735894984.484011404] [listener]: Listen: cpu_usage: 0.2%
-[listener-2] [INFO] [1735894985.486258713] [listener]: Listen: cpu_usage: 0.1%
+[INFO] [1736316792.790200517] [listener]: Listen: 0.100000%
+[INFO] [1736316793.793221956] [listener]: Listen: 0.000000%
+[INFO] [1736316794.795402437] [listener]: Listen: 0.000000%
+[INFO] [1736316795.797564332] [listener]: Listen: 0.000000%
+[INFO] [1736316796.799398471] [listener]: Listen: 0.100000%
+[INFO] [1736316797.802095704] [listener]: Listen: 0.000000%
+[INFO] [1736316798.803414406] [listener]: Listen: 0.300000%
+[INFO] [1736316799.805267649] [listener]: Listen: 1.700000%
+[INFO] [1736316800.808251560] [listener]: Listen: 4.200000%
+[INFO] [1736316801.810335455] [listener]: Listen: 0.100000%
+[INFO] [1736316802.813210739] [listener]: Listen: 0.100000%
 ```
 
 ## テスト環境
